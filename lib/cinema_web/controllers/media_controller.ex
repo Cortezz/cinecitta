@@ -1,4 +1,4 @@
-defmodule CinemaWeb.PageController do
+defmodule CinemaWeb.VideoController do
   use CinemaWeb, :controller
 
   def index(conn, _params) do

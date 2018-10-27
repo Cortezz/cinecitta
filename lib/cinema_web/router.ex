@@ -16,7 +16,7 @@ defmodule CinemaWeb.Router do
   scope "/", CinemaWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", VideoController, :index
   end
 
   # Other scopes may use custom stacks.
