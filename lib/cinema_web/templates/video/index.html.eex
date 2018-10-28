@@ -1,1 +1,8 @@
-index
+<ul>
+<%= for video <- @videos do %> 
+    <li>
+        Created <%= video.filename %> on <%= video.inserted_at %>
+    </li>
+<% end %>
+</ul>
+<%= link("Create a video", to: video_path(@conn, :new)) %>

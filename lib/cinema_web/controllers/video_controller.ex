@@ -4,7 +4,8 @@ defmodule CinemaWeb.VideoController do
   alias Cinema.Video
 
   def index(conn, _params) do
-    render conn, "index.html"
+    videos = Video.get_list()
+    render conn, "index.html", videos: videos
   end
 
   def new(conn, _params) do

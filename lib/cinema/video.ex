@@ -22,4 +22,8 @@ defmodule Cinema.Video do
   def create(attrs) do
     Repo.insert(attrs)
   end
+
+  def get_list do
+    Repo.all(Cinema.Video)
+  end
 end
