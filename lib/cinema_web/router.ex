@@ -21,8 +21,9 @@ defmodule CinemaWeb.Router do
     resources "videos", VideoController, only: [:index, :new, :create]
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", CinemaWeb do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", CinemaWeb do
+    pipe_through :api
+  
+    resources "videos", VideoAPIController, only: [:create, :show, :index]
+  end
 end

@@ -23,6 +23,10 @@ defmodule Cinema.Video do
     Repo.insert(attrs)
   end
 
+  def get(video_id) do
+    Repo.get(Cinema.Video, video_id)
+  end
+
   def get_list do
     Repo.all(Cinema.Video)
   end
