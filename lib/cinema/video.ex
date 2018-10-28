@@ -14,6 +14,6 @@ defmodule Cinema.Video do
   def changeset(video, attrs) do
     video
     |> cast(attrs, [:filename, :duration])
-    |> validate_required([:filename, :duration])
+    |> validate_required([:filename])
   end
 end
