@@ -53,6 +53,6 @@ config :cinema, Cinema.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "cinema-ideal",
+  database: "cinecitta",
   hostname: "localhost",
   pool_size: 10
